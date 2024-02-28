@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containerMain{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+body{
+    background-color: #E6E6FA;
+}
+#username{
+    font-size: 70px;
+}
+.heroSection{
+    height: 50vh;
+    background-color: #008080;
+    color: #fff;
+    font-family: "Poppins";
+    display: grid;
+    place-content: center;
+    background-image: linear-gradient(to right, #008080 50%, yellow 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 0.5s ease-out;
+}
+.heroSection:hover{
+    background-position: right bottom;
+    color: #008080;
+}
+.calculator{
+    display: grid;
+    place-items: center;
+}
+.form{
+    margin: 20px;
+}
+input{
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #dddada;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 5px #008080;
+    outline-color: #dddada;
+    
+}
+.form-header{
+    color: #008080;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: #008080;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+/* #sum, #average, #both{
+    color: #dddada;
+    background-color: #008080;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+} */
+#sum, #average, #both{
+    color: #dddada;
+    background-color: #008080;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    /* Set up the initial background to cover the button */
+    background-image: linear-gradient(to right, #008080 50%, yellow 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 0.5s ease-out;
+}
+
+#sum:hover, #average:hover, #both:hover {
+    /* Shift the background to show the yellow color sliding in */
+    background-position: right bottom;
+    color: #008080;
+}
+#result{
+    background-color: #008080;
+    color: #fff;
+    width: 40%;
+    height: 200px;
+    border-radius: 7px;
+    font-size: 40px;
+    display: grid;
+    place-items: center;
+}
+.result-cont{
+    display: flex;
+    justify-content: center;
+}
+.footer-text{
+    height: 10vh;
+    background-color: #008080;
+    color: #fff;
+    font-family: "Poppins";
+    margin-top: 20px;
+    display: grid;
+    place-content: center;
+    background-image: linear-gradient(to right, #008080 50%, yellow 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 0.5s ease-out;
+}

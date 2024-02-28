@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, #008080 50%, yellow 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 0.5s ease-out;
+    height: 40vh;
+    border-radius: 12px;
+    width: 40vw;
+    place-content: center;
+}
+.welcome-container:hover{
+    background-position: right bottom;
+    color: #008080;
+}
+
+.text-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text-input p {
+    margin-right: 10px;
+    font-size: 20px;
+}
+#nameInput{
+    background-color: #dddada;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 5px #dddada;
+    outline-color: #dddada;
+}
+#okayButton{
+    color: #dddada;
+    background-color: #008080;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    /* Set up the initial background to cover the button */
+    background-image: linear-gradient(to right, #008080 50%, yellow 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 0.5s ease-out;
+}
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="text-input">
+            <p>Hi, my biochemist, what's your name?</p>
+            <input type="text" id="nameInput" placeholder="Enter your name here">
+        </div>
+        <button id="okayButton">Okay</button>
+    </div>
+    <script src="welcome.js"></script>
+</body>
+</html>
